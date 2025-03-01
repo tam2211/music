@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Lab</title>
+
+    <style>
+        body {
+            margin: 10px;
+
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgb(190, 162, 255);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px"   
+
+        }
+
+        .main {
+            display: flex;
+            justify-self: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 16px;
+
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            background-color: rgb(226, 226, 226);
+            display: flex;
+            padding: 16px;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        h3 {
+            color: rgb(42, 42, 42);
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background-color: rgb(190, 162, 255);
+        }
+
+        footer .controls {
+            display: flex;
+            gap: 8px;
+        }
+
+        footer .progress {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+        }
+
+        footer .progress .bar {
+            flex: 1;
+            height: 4px;
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class='header' style="background-color:rgb(190, 162, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:16px">
+
+
+        <h1>Music Lab</h1>
+        <div>
+            <input type='text' placeholder="Tên Bài Hát hoặc Nghệ Sĩ">
+            <button>Search</button>
+        </div>
+
+    </div>
+
+
+    <div class='main'>
+        <div class='card'>
+            <h3>US-UK</h3>
+            <button>Play</button>
+        </div>
+
+        <div class='card'>
+            <h3>Heavy Metal</h3>
+            <button>Play</button>
+        </div>
+
+        <div class='card'>
+            <h3>Pop</h3>
+            <button>Play</button>
+        </div>
+
+        <div class='card'>
+            <h3>Classical</h3>
+            <button>Play</button>
+        </div>
+
+    </div>
+
+    <div class='player'>
+        <video width="500" height='300' controls>
+            <source src='Usseewa.mp4' type='video/mp4'>
+
+        </video>
+
+        <iframe src='https://www.youtube.com/embed/wplRCdtGe7U' width="500" height="300">
+
+        </iframe>
+    </div>
+
+    <div class='pop'>
+        <video width="500" height='300' controls>
+            <source src='BIRDS OF A FEATHER.mp4' type='video/mp4'>
+
+        </video>
+
+        <!-- <iframe src="https://www.youtube.com/embed/V9PVRfjEBTI?si=aUSs0pibk6JEpC99" width="'500" height='300'>
+
+        </iframe> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/j0zLRVPGzD8?si=WsuMQDrenAVc0XIX"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+
+
+
+    <footer>
+        <div>
+            <p>Now Playing</p>
+        </div>
+
+        <div class='controls'>
+            <button>Prev</button>
+            <button>Play</button>
+            <button>Next</button>
+        </div>
+
+        <div class='progress'>
+            <span>0:00</span>
+            <div class='bar'></div>
+            <span>3:45</span>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
